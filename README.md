@@ -1,0 +1,2 @@
+# TrashIt
+ waste-management-system
