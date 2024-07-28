@@ -1,0 +1,18 @@
+/* src/assets/styles/ViewCoins.css */
+
+.view-coins {
+    padding: 20px;
+  }
+  
+  .view-coins h1 {
+    margin-bottom: 20px;
+  }
+  
+  .coins-balance {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
