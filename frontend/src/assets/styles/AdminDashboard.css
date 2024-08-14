@@ -1,0 +1,61 @@
+.admin-dashboard {
+    display: flex;
+}
+/* Admin Dashboard Container */
+.admin-dashboard {
+    display: flex;
+    height: 100vh;
+    background-color: #f3f4f6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.admin-dashboard.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+/* Content Area */
+.content-admin {
+    flex: 1;
+    padding: 2rem;
+    animation: fadeInUp 0.8s ease;
+}
+
+/* FadeInUp Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.content-admin {
+    margin-left: 15rem;
+    padding: 2rem;
+    width: calc(100% - 15rem);
+    transition: margin-left 0.5s ease, width 0.5s ease;
+}
+
+.sidebar.active ~ .content-admin {
+    margin-left: 16rem;
+    width: calc(100% - 5.25rem);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}

@@ -1,38 +1,98 @@
-/* src/assets/styles/ConvertCoins.css */
-
 .convert-coins {
-    padding: 20px;
-  }
-  
-  .convert-coins h1 {
-    margin-bottom: 20px;
-  }
-  
-  .convert-form {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .convert-form input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .convert-form button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .convert-form button:hover {
-    background-color: #555;
-  }
-  
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  padding: 20px;
+  background: #f9f9f9;
+}
+.convert-coins h2{
+  color: green;
+}
+
+.convert-form {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field-coins {
+  margin: 10px 5px;
+  border: 2px solid #4CAF50;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+  width: calc(100% - 22px);
+  font-size: 16px;
+}
+
+.action-button {
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  background: linear-gradient(135deg, #2d942d, #0e5b0e); /* Green gradient */
+  transition: background 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(50, 205, 50, 0.4);
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.action-button:hover {
+  background: linear-gradient(135deg, #228B22, #006400);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(50, 205, 50, 0.6);
+}
+
+.payment-options {
+  margin-top: 50px;
+}
+.payment-options h2{
+  color: green;
+}
+.payment-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.payment-card {
+  display: flex;
+  align-items: center;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 10px;
+  transition: border-color 0.3s ease;
+}
+
+.payment-card:hover {
+  border-color: #4CAF50;
+}
+
+.payment-card input {
+  margin-right: 10px;
+}
+
+.payment-card label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.payment-card img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.payment-card span {
+  font-size: 18px;
+  font-weight: bold;
+}

@@ -4,7 +4,7 @@ import hiw from '../../assets/images/Howitworks.jpeg';
 
 const HowItWorks = () => {
   return (
-    <div id="what-we-do" className="how-it-works">
+    <div id="how-it-workss" className="how-it-works">
       <div className="content-container">
         <img 
           src={hiw}

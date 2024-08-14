@@ -1,66 +1,121 @@
+/* Container for the entire footer */
 .footer {
-    background: #e0f7e9; /* Light green background */
-    color: #333; /* Dark grey text */
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  .footer-content {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 20px;
-  }
-  
-  .footer-section {
-    flex: 1;
-    padding: 10px 20px;
-  }
-  
-  .logo-text {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #089827; /* Dark green for logo */
-  }
-  
-  .logo-text span {
-    color: #333; /* Dark grey for 'It' */
-  }
-  
-  .contact span {
-    display: block;
-    margin: 10px 0;
-  }
-  
-  .footer-section.links ul {
-    list-style: none;
-  }
-  
-  .footer-section.links ul a {
-    text-decoration: none;
-    color: #089827; /* Dark green for links */
-    display: block;
-    margin: 10px 0;
-  }
-  
-  .footer-section.links ul a:hover {
-    color: #06761d; /* Darker green on hover */
-  }
-  
-  .social-links a {
-    color: #089827; /* Dark green for social media icons */
-    margin: 0 10px;
-    font-size: 1.5rem;
-  }
-  
-  .social-links a:hover {
-    color: #06761d; /* Darker green on hover */
-  }
-  
-  .footer-bottom {
-    background: #cce4d6; /* Slightly darker green */
-    color: #333; /* Dark grey text */
-    padding: 10px 0;
-    font-size: 0.9rem;
-  }
-  
+  width: 100%;
+  background: #024731; /* Richer dark green background */
+  color: #ffffff; /* White text */
+  margin-top: 100px;
+  box-sizing: border-box;
+ /* Increase padding for more space */
+}
+
+/* Content wrapper with enhanced layout */
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+  /* Increased padding for better spacing */
+}
+
+/* General section styling */
+.footer-section {
+  flex: 1;
+  min-width: 220px;
+  margin-bottom: 30px; /* More margin for spacing between sections */
+  padding: 0 15px;
+}
+
+/* Title styling with increased size and white color */
+.footer-title {
+  color: #ffffff; /* White text */
+  font-size: 24px; /* Increased font size */
+  font-weight: 700; /* Bolder font weight */
+  margin-bottom: 25px;
+  position: relative;
+  text-transform: uppercase; /* Uppercase for titles */
+}
+
+.footer-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 3px; /* Thicker line */
+  width: 60px; /* Wider line */
+  background: white; /* Lighter green for underline */
+}
+.footer-section.about
+{
+  padding-right: 50px;
+}
+
+/* About section styling */
+.footer-section.about p {
+  font-size: 16px; /* Increased font size */
+  line-height: 1.8; /* Adjusted line height for readability */
+  color: #ffffff; /* White text */
+}
+
+/* Links styling */
+.footer-section.links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section.links ul li {
+  margin-bottom: 15px; /* Slightly increased spacing */
+}
+
+.footer-section.links ul li a {
+  color: #ffffff; /* White text */
+  font-size: 16px; /* Increased font size */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section.links ul li a:hover {
+  color: #a3d2b2; /* Lighter green on hover */
+}
+
+/* Contact section styling */
+.footer-section.contact p {
+  font-size: 16px; /* Increased font size */
+  margin-bottom: 15px; /* Increased margin for better spacing */
+  color: #ffffff; /* White text */
+}
+
+/* Social section styling */
+.footer-section.social ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.footer-section.social ul li {
+  margin-right: 15px;
+}
+
+.footer-section.social ul li a {
+  color: #ffffff; /* White text */
+  font-size: 22px; /* Larger icon size */
+  transition: color 0.3s;
+}
+
+.footer-section.social ul li a:hover {
+  color: #a3d2b2; /* Lighter green on hover */
+}
+
+/* Footer bottom area styling */
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px; /* Increased margin for more space */
+  padding-top: 20px;
+  border-top: 1px solid #a3d2b2; /* Lighter green border */
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 16px; /* Increased font size */
+  color: #ffffff; /* White text */
+}

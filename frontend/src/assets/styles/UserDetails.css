@@ -1,0 +1,52 @@
+.user-details-container {
+  padding: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode */
+.user-details-container {
+  background-color: #f3f4f6;
+  color: #333;
+}
+
+.user-details-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-details-table th,
+.user-details-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.user-details-table th {
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: left;
+}
+
+/* Dark Mode */
+.dark-mode .user-details-container {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.dark-mode .user-details-table th {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.dark-mode .user-details-table td {
+  border-color: #555555;
+  color: #dddddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .user-details-table th, 
+  .user-details-table td {
+      padding: 6px;
+  }
+}

@@ -1,0 +1,68 @@
+.waste-submission-container {
+  padding: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode */
+.waste-submission-container {
+  background-color: #f3f4f6;
+  color: #333;
+}
+
+.waste-submission-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.waste-submission-table th,
+.waste-submission-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.waste-submission-table th {
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: left;
+}
+
+.waste-submission-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.waste-submission-table tr:hover {
+  background-color: #e9e9e9;
+}
+
+/* Dark Mode */
+.dark-mode .waste-submission-container {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.dark-mode .waste-submission-table th {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.dark-mode .waste-submission-table td {
+  border-color: #555555;
+  color: #dddddd;
+}
+
+.dark-mode .waste-submission-table tr:nth-child(even) {
+  background-color: #2a2a2a;
+}
+
+.dark-mode .waste-submission-table tr:hover {
+  background-color: #3a3a3a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .waste-submission-table th, 
+  .waste-submission-table td {
+    padding: 6px;
+  }
+}

@@ -1,0 +1,257 @@
+.sidebar {
+    background-color: #ffffff; /* White */
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2rem 1rem;
+    width: 15rem;
+    height: 100vh;
+    transition: width 0.5s ease, background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.sidebar.dark {
+    background-color: #333333; /* Dark background */
+}
+
+.sidebar .logoContainer {
+    display: flex;
+    transition: width 0.5s ease;
+    padding-right: 90px;
+}
+
+.sidebar .logoContainer img {
+    margin-top: 10px;
+    height: 3rem;
+    transition: opacity 0.5s ease;
+    margin-left: 50px;
+}
+
+.sidebar .burgerContainer {
+    content: "";
+    background-color: #28a745; /* Green */
+    position: absolute;
+    right: -17.5px;
+    top: calc(9rem / 1.15);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    z-index: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar .burgerContainer .burgerTrigger {
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+}
+
+.sidebar .burgerContainer .burgerMenu {
+    background-color: #28a745; /* Green */
+    width: 20px;
+    height: 3px;
+    border-radius: 2rem;
+    transition: 0.5s all;
+    position: relative;
+}
+
+.sidebar .burgerContainer .burgerMenu::before,
+.sidebar .burgerContainer .burgerMenu::after {
+    content: "";
+    background-color: #ffffff; /* White */
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    border-radius: 2rem;
+    transition: 0.5s all;
+}
+
+.sidebar.dark .burgerContainer .burgerMenu {
+    background-color: #555555; /* Dark Green */
+}
+
+.sidebar.dark .burgerContainer .burgerMenu::before,
+.sidebar.dark .burgerContainer .burgerMenu::after {
+    background-color: #eeeeee; /* Light Color for contrast */
+}
+
+.sidebar .burgerContainer .burgerMenu::before {
+    top: -0.4rem;
+    transform: translateY(0.4rem) rotate(-45deg);
+}
+
+.sidebar .burgerContainer .burgerMenu::after {
+    top: 0.4rem;
+    transform: translateY(-0.4rem) rotate(45deg);
+}
+
+.sidebar .profileContainer {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .profileContainer img {
+    width: auto;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.sidebar .profileContainer .profileContents {
+    padding-left: 1rem;
+}
+
+.sidebar .profileContainer .profileContents p.name {
+    margin: 0;
+    font-size: 16.7px;
+    color: #333333; /* Dark text */
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+.sidebar.dark .profileContainer .profileContents p.name {
+    color: #ffffff; /* Light text for dark mode */
+}
+
+.sidebar .profileContainer .profileContents p {
+    margin: 0;
+    font-size: 13.9px;
+    color: #666666; /* Medium text */
+    text-transform: lowercase;
+}
+
+.sidebar.dark .profileContainer .profileContents p {
+    color: #cccccc; /* Lighter text for dark mode */
+}
+
+.sidebar .contentsContainer {
+    margin-top: 2rem;
+}
+
+.sidebar .contentsContainer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar .contentsContainer ul li {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin: 0.75rem 0;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.sidebar.dark .contentsContainer ul li {
+    background-color: #444444; /* Dark background for list items */
+    color: #cccccc; /* Light text */
+}
+
+.sidebar.dark .contentsContainer ul li:hover,
+.sidebar.dark .contentsContainer ul li.active {
+    background-color: #555555; /* Slightly lighter dark background */
+}
+
+.sidebar .contentsContainer ul li svg {
+    margin-right: 1rem;
+}
+
+.sidebar .contentsContainer ul li span {
+    font-size: 18px;
+    color: #333333; /* Dark text */
+    transition: opacity 0.5s ease;
+}
+
+.sidebar.dark .contentsContainer ul li span {
+    color: #cccccc; /* Light text for dark mode */
+}
+
+.sidebar .contentsContainer ul li.active {
+    background-color: #e6e6e6; /* Light grey */
+}
+
+.sidebar.dark .contentsContainer ul li.active {
+    background-color: #555555; /* Dark background for active item in dark mode */
+}
+/* Continue Sidebar Styles */
+.sidebar.dark .contentsContainer ul li:hover {
+    background-color: #666666; /* Slightly lighter dark background for hover state */
+}
+
+.sidebar.active {
+    width: 5.25rem;
+    transition: width 0.5s ease;
+}
+
+.sidebar.active .logoContainer {
+    width: 5.25rem;
+    justify-content: center; 
+}
+
+.sidebar.active .logoContainer img {
+    height: 2rem; 
+}
+
+.sidebar.active .burgerContainer {
+    right: -17.5px; 
+}
+
+.sidebar.active .burgerContainer .burgerMenu {
+    background-color: #ffffff; /* White */
+}
+
+.sidebar.active .burgerContainer .burgerMenu::before,
+.sidebar.active .burgerContainer .burgerMenu::after {
+    transform: translateY(0) rotate(0deg);
+}
+
+.sidebar.active .profileContainer .profileContents {
+    opacity: 0;
+}
+
+.sidebar.active .contentsContainer ul li span {
+    display: none; 
+}
+
+.sidebar.active .contentsContainer ul li svg {
+    margin-right: 0;
+    width: 24px; 
+    height: 24px;
+}
+
+.content1 {
+    margin-left: 15rem;
+    padding: 20px;
+    flex-grow: 1;
+    transition: margin-left 0.5s ease;
+}
+
+.sidebar.active ~ .content1 {
+    margin-left: 5.25rem;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 20vw;
+    }
+
+    .sidebar.active {
+        width: 5.25rem;
+    }
+
+    .content1 {
+        margin-left: 20vw;
+    }
+
+    .sidebar.active ~ .content1 {
+        margin-left: 5.25rem;
+    }
+}

@@ -29,17 +29,66 @@
 // export default Home;
 
 
+// import React from 'react';
+// import { Link } from 'react-router-dom';
+// import '../../assets/styles/Home.css';
+// import HowitWorks from './HowItWorks';
+// import SubmitWaste from '../user/SubmitWaste';
+
+// import Footer from '../common/Footer';
+// import Card from './Card';
+// import Card2 from './Card2';
+// import SearchJob from '../wasteCollector/SearchJob';
+
+// const Home = ({ isLoggedIn }) => {
+//   return (
+//     <div className="home">
+//       <div className="hero-container">
+//         <h1>Welcome to the Waste Management</h1>
+//         <p className="slogan">TURN TRASH INTO CASH</p>
+//       </div>
+//       <div className='des'>
+//         <p>
+//           Here at our platform, you can submit your waste and earn coins. These coins can be converted to money or used to buy products from our shop. We ensure that your waste is collected and sent to recycling plants, benefiting the environment and helping us all.
+//         </p>
+//         {!isLoggedIn && (
+//           <div className="home-buttons">
+//             <Link to="/login" className="home-button">LOGIN</Link>
+//             <Link to="/register" className="home-button">REGISTER</Link>
+//           </div>
+//         )}
+//       </div>
+//       {!isLoggedIn && <HowitWorks />}
+//       <SubmitWaste />
+//       <Card/>
+//       <SearchJob></SearchJob>
+      
+
+
+
+//       <Footer  isHomePage={true}></Footer>
+     
+//     </div>
+//   );
+// };
+
+// export default Home;
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../assets/styles/Home.css';
 import HowitWorks from './HowItWorks';
 import SubmitWaste from '../user/SubmitWaste';
-
 import Footer from '../common/Footer';
 import Card from './Card';
 import Card2 from './Card2';
+import SearchJob from '../wasteCollector/SearchJob';
+import { useAuth } from '../context/AuthContext';
+import StrengthsSection from './StrengthsSection';
+import NeedHelp from './NeedHelp';
 
-const Home = ({ isLoggedIn }) => {
+const Home = () => {
+  const { isLoggedIn } = useAuth();
+
   return (
     <div className="home">
       <div className="hero-container">
@@ -52,20 +101,17 @@ const Home = ({ isLoggedIn }) => {
         </p>
         {!isLoggedIn && (
           <div className="home-buttons">
-            <Link to="/login" className="home-button">LOGIN</Link>
-            <Link to="/register" className="home-button">REGISTER</Link>
+            <Link to="/login" className="home-button">Login</Link>
+            <Link to="/register" className="home-button">Register</Link>
           </div>
         )}
       </div>
       {!isLoggedIn && <HowitWorks />}
       <SubmitWaste />
-      <Card/>
-      
-
-
-
-      <Footer></Footer>
-     
+      <Card />
+      <SearchJob />
+      <StrengthsSection/>
+      <NeedHelp/>
     </div>
   );
 };

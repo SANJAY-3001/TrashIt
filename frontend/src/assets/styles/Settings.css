@@ -1,0 +1,144 @@
+:root {
+    --theme-color: #4caf50; /* Default theme color */
+}
+
+.settings-page {
+    padding: 2rem;
+    background-color: #f3f4f6;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.settings-page.dark-mode {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+/* Header */
+.settings-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    animation: fadeInDown 0.8s ease;
+}
+
+.settings-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.settings-header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #777;
+}
+
+.settings-page.dark-mode .settings-header p {
+    color: #aaaaaa;
+}
+
+/* Option Cards */
+.settings-options {
+    display: flex;
+    gap: 2rem;
+    animation: fadeInUp 0.8s ease;
+}
+
+.option-card {
+    flex: 1;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.settings-page.dark-mode .option-card {
+    background-color: #333333;
+}
+
+.option-icon {
+    font-size: 2rem;
+    color: var(--theme-color);
+    margin-bottom: 0.5rem;
+}
+
+.option-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.settings-page.dark-mode .option-card h3 {
+    color: #ffffff;
+}
+
+.option-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.settings-page.dark-mode .option-card p {
+    color: #aaaaaa;
+}
+
+.option-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Toggle Button */
+.toggle-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: white;
+    background-color: var(--theme-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+    background-color: #388e3c; /* Darker shade for hover */
+}
+
+/* Color Picker */
+.color-picker {
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .settings-options {
+        flex-direction: column;
+    }
+}

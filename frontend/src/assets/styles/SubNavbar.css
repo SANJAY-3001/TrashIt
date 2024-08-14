@@ -1,0 +1,28 @@
+.sub-navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: white;
+    padding: 15px 30px;
+    border-bottom: 1px solid #ccc;
+    height: 20px;
+}
+
+.subnav-item {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    color: green;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.subnav-item:hover {
+    color: darkgreen;
+}
+
+.subnav-icon {
+    margin-right: 10px;
+    color: green;
+}

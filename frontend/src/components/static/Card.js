@@ -7,6 +7,7 @@ import i3 from '../../assets/images/wastemanage.jpg';
 const Card = () => {
   return (
     <div className="card-wrapper">
+    <h2>OUR SERVICES</h2>
       <div className="card-container">
         <div className="card">
           <img src={i1} alt="Search and select a service" className="card-image" />
@@ -31,7 +32,7 @@ const Card = () => {
         </div>
       </div>
       <div className="flow-line-container">
-        <div className="flow-line"></div>
+        <hr className="flow-line" />
         <div className="flow-step" style={{ left: '0%' }}>
           <div className="diamond"><span className="diamond-content">1</span></div>
         </div>
@@ -47,3 +48,4 @@ const Card = () => {
 }
 
 export default Card;
+

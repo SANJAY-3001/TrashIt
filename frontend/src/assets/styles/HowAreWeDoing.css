@@ -1,0 +1,281 @@
+/* .survey-container {
+    max-width: 800px;
+    margin: 30px auto 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.survey-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.survey-header .company-logo {
+    height: 60px;
+    margin-right: 15px;
+}
+
+.survey-header .company-name {
+    font-size: 24px;
+    color: #276727;
+}
+
+.survey-container h2 {
+    text-align: center;
+    color: #276727;
+}
+
+.survey-intro {
+    text-align: center;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.survey-container hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.survey-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.survey-form .form-group {
+    margin-bottom: 20px;
+}
+
+.survey-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.survey-form .required {
+    color: red;
+}
+
+.survey-form .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.survey-form .rating-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.survey-form .rating-label {
+    text-align: center;
+    color: #333;
+}
+
+.survey-form .rating-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    margin-bottom: 5px;
+}
+
+.survey-form .rating-icon:hover,
+.survey-form input[type="radio"]:checked + .rating-icon {
+    background-color: #276727;
+    color: white;
+}
+
+.survey-form .rating-text {
+    display: block;
+    font-size: 12px;
+    color: #777;
+}
+
+.survey-form .submit-button {
+    align-self: center;
+    padding: 10px 20px;
+    background-color: #276727;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.survey-form .submit-button:hover {
+    background-color: #1f5521;
+} */
+
+.how-are-we-doing-container {
+    text-align: center;
+}
+
+.hero-section-how {
+    position: relative;
+    height: 400px;
+    background: url('../../assets/images/f2.png') no-repeat center center/cover;
+}
+
+.hero-image {
+    display: none; /* Image set as background, can remove if needed */
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 8px;
+}
+.hero-text h1{
+    color: white;
+}
+
+.content {
+    padding: 20px;
+}
+
+.survey-container {
+    max-width: 800px;
+    margin: 30px auto 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.survey-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.survey-header .company-logo {
+    height: 60px;
+    margin-right: 15px;
+}
+
+.survey-header .company-name {
+    font-size: 24px;
+    color: #276727;
+}
+
+.survey-container h2 {
+    text-align: center;
+    color: green;
+}
+
+.survey-intro {
+    text-align: center;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    font-size: 1.2rem;
+}
+
+.survey-container hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.survey-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.survey-form .form-group-hd {
+    margin-bottom: 20px;
+}
+
+.survey-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.survey-form .required {
+    color: red;
+}
+
+.survey-form .form-control {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.survey-form .rating-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.survey-form .rating-label {
+    text-align: center;
+    color: #333;
+}
+
+.survey-form .rating-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    margin-bottom: 5px;
+}
+
+.survey-form .rating-icon:hover,
+.survey-form input[type="radio"]:checked + .rating-icon {
+    background-color: #276727;
+    color: white;
+}
+
+.survey-form .rating-text {
+    display: block;
+    font-size: 12px;
+    color: #777;
+}
+
+.survey-form .submit-button-how {
+    width: 40%;
+    align-self: center;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    background: linear-gradient(135deg, #2d942d, #0e5b0e); /* Green gradient */
+    color: white;
+    padding: 10px 20px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(50, 205, 50, 0.4);
+    font-weight: bold;
+    font-size: 16px; 
+}
+
+.survey-form .submit-button-how:hover {
+    background: linear-gradient(135deg, #228B22, #006400);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(50, 205, 50, 0.6);
+}

@@ -1,0 +1,206 @@
+/* Dashboard Page Container */
+.dashboard-page {
+    padding: 2rem;
+    background-color: #f3f4f6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dashboard-page.dark-mode {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+/* Dashboard Header */
+.dashboard-header {
+    background-color: #1b861b; /* Green */
+    color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    text-align: center;
+    animation: fadeInDown 0.8s ease;
+}
+
+.dashboard-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.dashboard-header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: white;
+}
+
+/* Dark Mode Header */
+.dashboard-page.dark-mode .dashboard-header {
+    background-color: #2a2a2a;
+    color: #ffffff;
+}
+
+/* Overview Cards */
+.dashboard-overview {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    animation: fadeInUp 0.8s ease;
+}
+
+/* Flexbox for Icon and Heading Alignment */
+.overview-card {
+    flex: 1;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard-page.dark-mode .overview-card {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.card-icon {
+    font-size: 2rem;
+    color: #4caf50;
+    margin-bottom: 0.5rem;
+}
+
+.dashboard-page.dark-mode .card-icon {
+    color: #90ee90;
+}
+
+.overview-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    margin-top: 0; /* Remove any default top margin */
+}
+
+.dashboard-page.dark-mode .overview-card h3 {
+    color: #ffffff;
+}
+
+/* Ensure there's space between the icon and the heading */
+.overview-card .card-icon + h3 {
+    margin-top: 0.5rem;
+}
+
+.overview-card p {
+    font-size: 2.5rem;
+    color: #4caf50;
+    margin: 0;
+    font-weight: 700;
+}
+
+.dashboard-page.dark-mode .overview-card p {
+    color: #90ee90;
+}
+
+.overview-card span {
+    display: block;
+    font-size: 0.875rem;
+    color: #888;
+    margin-top: 0.5rem;
+}
+
+.dashboard-page.dark-mode .overview-card span {
+    color: #aaaaaa;
+}
+
+.overview-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Details Cards */
+.dashboard-details {
+    display: flex;
+    gap: 2rem;
+    animation: fadeInUp 0.8s ease;
+}
+
+.details-card {
+    flex: 1;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.dashboard-page.dark-mode .details-card {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.details-card h3 {
+    font-size: 1.75rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.dashboard-page.dark-mode .details-card h3 {
+    color: #ffffff;
+}
+
+.details-card p {
+    font-size: 1rem;
+    color: #666;
+    font-weight: 400;
+}
+
+.dashboard-page.dark-mode .details-card p {
+    color: #aaaaaa;
+}
+
+.details-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-overview, .dashboard-details {
+        flex-direction: column;
+    }
+}

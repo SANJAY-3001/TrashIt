@@ -1,0 +1,193 @@
+/* .support-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.support-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.company-logo {
+    height: 60px;
+    margin-right: 15px;
+}
+
+.company-name {
+    font-size: 24px;
+    color: #276727;
+}
+
+.support-intro {
+    text-align: center;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.support-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.required {
+    color: red;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-button {
+    align-self: center;
+    padding: 10px 20px;
+    background-color: #276727;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #1f5521;
+} */
+.support-container {
+    text-align: center;
+}
+
+.support-header {
+    position: relative;
+    width: 100%; /* Full viewport width */
+    height: 400px;
+    overflow: hidden;
+    margin: 0 auto; /* Center align the container */
+}
+
+.banner-image {
+    width: 100%; /* Ensure the image covers full viewport width */
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay h1 {
+    color: #fff;
+    font-size: 48px;
+    margin: 0;
+}
+
+.form-container-help {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 50px auto 30px;
+    max-width: 800px;
+}
+
+.form-container-help h2 {
+    text-align: center;
+    color: green;
+}
+
+.support-intro {
+    text-align: center;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    font-size: 1.2rem;
+}
+
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.support-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.support-form .form-group-help {
+    margin-bottom: 20px;
+}
+
+.support-form label {
+    text-align: left;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.support-form .required {
+    color: red;
+}
+
+.support-form .form-control {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 50px;
+}
+
+.submit-button-help {
+    width: 40%;
+    align-self: center;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    background: linear-gradient(135deg, #2d942d, #0e5b0e); /* Green gradient */
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(50, 205, 50, 0.4);
+    font-weight: bold;
+}
+
+.submit-button-help:hover {
+    background: linear-gradient(135deg, #228B22, #006400);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(50, 205, 50, 0.6);
+}

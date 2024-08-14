@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 .categories-container {
   display: flex;
   justify-content: space-around;
   padding: 20px;
-  margin-top: 200px;
+  margin-top: 300px;
   gap: 40px; /* Increase space among the containers */
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .category-box {
@@ -57,4 +60,12 @@ h3 {
   margin-top: 10px;
   font-size: 1rem;
   color: #333; /* Dark grey color for description */
+  text-align: justify;
+}
+.categories-container p
+{
+  font-family: 'Roboto' sans-serif;
+  line-height: 1.8;
+  color: #333;
+  font-size: 1.25rem;
 }

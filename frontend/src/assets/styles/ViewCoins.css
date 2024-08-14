@@ -1,18 +1,104 @@
-/* src/assets/styles/ViewCoins.css */
+.view-coins-page {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  padding: 20px;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px; /* Adjust gap as needed */
+  position: relative; /* Ensure correct positioning context */
+}
 
-.view-coins {
-    padding: 20px;
-  }
-  
-  .view-coins h1 {
-    margin-bottom: 20px;
-  }
-  
-  .coins-balance {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
+.left-side {
+  position: sticky;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Adjust gap as needed */
+  width: 30%; /* Set a fixed width for the left side */
+}
+
+.coin-display {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%; /* Ensure it takes the full width of the left side */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.coin-graphic {
+  font-size: 48px;
+  color: #4CAF50;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.coin-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.coin-buttons button {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px 0; /* Adjust margin for spacing between buttons */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%; /* Ensure buttons take the full width */
+  background: linear-gradient(135deg, #2d942d, #0e5b0e); /* Green gradient */
+  transition: background 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(50, 205, 50, 0.4);
+  font-weight: bold;
+}
+
+.coin-buttons button:hover {
+  background: linear-gradient(135deg, #228B22, #006400);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(50, 205, 50, 0.6);
+}
+
+.activity-container {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 65%; /* Ensure it takes the remaining space */
+  flex-basis: 65%; /* Adjust flex-basis to control the width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding-top: 10px; /* Reduce padding at the top */
+  margin-left: 10px;
+  margin-bottom: 80px; /* Space for ConvertCoins section */
+}
+
+.activity-container h3 {
+  text-align: center;
+  margin-top: 0; /* Remove top margin */
+}
+
+.transaction {
+  background: #e8f5e9;
+  border-radius: 25px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ConvertCoins section */
+
+.convert-coins-container {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px; /* Reduced padding */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative; /* Adjusted to be relative to parent */
+  margin-top: 20px; /* Add space from other content */
+  width: calc(100% - 40px); /* Ensure it does not exceed container width */
+  max-width: 600px; /* Reduced max-width */
+}

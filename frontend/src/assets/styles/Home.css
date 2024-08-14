@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 .home {
   font-family: Arial, sans-serif;
-  padding: 50px;
+  /* padding: 50px; */
   background-color: #f9f9f9; /* Light grey background */
   color: #333; /* Dark grey text color */
 }
@@ -22,11 +22,13 @@
   border-radius: 10px; /* Optional: rounded corners for the container */
   margin-bottom: 20px; /* Space below the container */
   max-width: 100%; /* Ensure it doesn’t overflow */
+  margin: 50px; /*new change*/
 }
 
 .hero-container h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
+  color: white;
 }
 
 .hero-container p.slogan {
@@ -44,7 +46,7 @@
   margin: 0 auto 20px auto; /* Center horizontally with bottom margin */
   color: #555; /* Medium grey color for description text */
   padding-left: 20px; /* Add left padding to align with the text */
-  text-align: left; /* Ensure text alignment is to the left */
+  text-align: justify; /* Ensure text alignment is to the left */
 }
 
 /* Description Container Styles */
@@ -53,14 +55,17 @@
   align-items: flex-start;
   justify-content: space-between; /* Space between description and buttons */
   margin-top: 50px;
+  margin: 50px;
  }
 
 .des p {
   flex: 1; 
   margin: 0;
+  /* font-weight: lighter; */
   font-family: 'Roboto' sans-serif;
-  font-weight: lighter;
-  
+  line-height: 1.8;
+  color: #333;
+  font-size: 1.25rem;
 } 
 
 /* Home Buttons Styles */
@@ -69,22 +74,29 @@
   justify-content: flex-start; /* Align buttons to the start (left) */
   gap: 40px; /* Space between buttons */
   margin-top: 20px;
-  margin-right: 200px;
+  margin-right: 180px;
 }
 
 .home-button {
   display: inline-block;
   padding: 15px 40px;
-  background-color: #089827; /* Green background for buttons */
+  /* Green background for buttons */
   color: white;
   text-decoration: none;
-  font-size: 1.125rem;
+  font-size: 1.2rem;
+  font-weight: bolder;
   border-radius: 5px;
   text-align: center;
+  cursor: pointer;
+  background: linear-gradient(135deg, #2d942d, #0e5b0e); /* Green gradient */
+  transition: background 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(50, 205, 50, 0.4);
 }
 
 .home-button:hover {
-  background-color: #06761d; /* Darker green on hover */
+  background: linear-gradient(135deg, #228B22, #006400);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(50, 205, 50, 0.6);
 }
 
 /* Responsive Styles */

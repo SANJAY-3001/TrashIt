@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+.search-job-container {
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #28a745; /* Green border */
+    background-color: #fff; /* White background */
+    width: 1300px;
+    margin-left: 100px;
+    margin-top: 200px;
+  }
+  
+  .image-section-job {
+    flex: 1;
+  }
+  
+  .job-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .text-section {
+    flex: 1;
+    background-color: #fff; /* White background */
+    color: #02437d; /* Dark blue text color */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 40px;
+    margin-bottom: 60px;
+  }
+  
+  .text-section h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    color: green; /* Green text color */
+    margin-top: 80px;
+  }
+  
+  .text-section p {
+    margin: 10px 0;
+    font-family: 'Roboto' sans-serif;
+    line-height: 1.8;
+    color: #333;
+    font-size: 1.25rem;
+  }
+  
+  .search-jobs-button {
+    width: 200px;
+   /* Green background color */
+    color: white;
+    padding: 15px 30px; /* Increased padding for better size */
+    border-radius: 15px;
+    border: none;
+    font-size: 1.2em; /* Slightly larger font size */
+    cursor: pointer;
+    margin-top: 20px;
+    background: linear-gradient(135deg, #2d942d, #0e5b0e); /* Green gradient */
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(50, 205, 50, 0.4);
+    font-weight: bold;
+  }
+  
+  .search-jobs-button:hover {
+    background: linear-gradient(135deg, #228B22, #006400);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(50, 205, 50, 0.6);
+  }
+  

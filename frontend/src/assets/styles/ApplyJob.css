@@ -1,0 +1,144 @@
+/* Ensure full width coverage for the container */
+.apply-job-container {
+  width: 100%;
+  padding: 20px 0; /* Add top and bottom padding */
+  background-color: #f9f9f9;
+}
+
+/* Resetting margins and paddings only within the apply-job-container */
+.apply-job-container * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.content-job {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; /* Center content horizontally */
+}
+
+.left-side-job {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  border-right: 1px solid #ccc;
+}
+
+.left-side-job h1 {
+  font-size: 2em;
+  color: green;
+  /* margin-bottom: 20px; */
+  padding-top: 40px;
+}
+
+.upload-section {
+  margin-top: 100px;
+}
+
+.upload-section p {
+  margin-bottom: 10px;
+}
+
+.upload-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.upload-button {
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  background-color: #dcdcdc;
+  border-radius: 5px;
+}
+
+.upload-button.green {
+  background-color: green;
+  color: white;
+}
+
+.right-side-job {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.right-side-job img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.form-job {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #ffffff;
+  margin: 20px auto; /* Center form */
+  border-top: 1px solid #ccc;
+}
+
+.form-group-job {
+  margin-bottom: 10px;
+}
+
+.form-group-job label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group-job input[type="text"],
+.form-group-job input[type="email"],
+.form-group-job input[type="tel"],
+.form-group-job input[type="checkbox"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group-job-checkbox {
+  display: flex;
+  align-items: center;
+}
+.form-group-job-checkbox label
+{
+  padding: 20px 5px;
+}
+.form-group-job-checkbox input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+.apply-btn {
+  width: 200px;
+  margin-top: 30px;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: larger;
+  background: linear-gradient(135deg, #2d942d, #0e5b0e); /* Green gradient */
+  transition: background 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(50, 205, 50, 0.4);
+  font-weight: bold;
+  font-size: 16px; 
+}
+
+.apply-btn:hover {
+  background: linear-gradient(135deg, #228B22, #006400);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(50, 205, 50, 0.6);
+}

@@ -1,97 +1,256 @@
-/* src/assets/styles/Profile.css */
-
-:root {
-  --background: #ffffff; /* White background */
-  --foreground: #333333; /* Dark text color */
-  --muted: #f0f0f0; /* Light grey for side nav and cards */
-  --border: #cccccc; /* Light grey for borders */
-  --hover: #e0e0e0; /* Slightly darker grey for hover */
-  --primary: #4CAF50; /* Green for primary actions */
-  --primary-foreground: #ffffff; /* White text on primary actions */
-  --radius: 8px; /* Border radius */
+/* .register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4; 
+  background: url('../../assets/images/green1.avif');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.profile-container {
+.register-container {
+  display: flex;
+  background-color: white;
+  width: 1000px; 
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  align-items: center; 
+}
+
+.register-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4; 
+}
+
+.register-image img {
+  max-width: 100%; 
+  height: auto;
+  border-radius: 8px 0 0 8px; 
+}
+
+.register-form {
+  flex: 1; 
+  padding: 60px 40px;
+  box-sizing: border-box;
+}
+
+.register-form h2 {
+  color: #4CAF50;
+  text-align: center;
+  margin-bottom: 30px; 
+}
+
+.form-group {
+  margin-bottom: 20px; 
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 15px; 
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.register-links {
+  margin-top: 20px; 
+  text-align: center;
+}
+
+.register-links a {
+  color: #4CAF50;
+  text-decoration: none;
+  margin: 0 15px; 
+  font-size: 14px;
+}
+
+.register-links a:hover {
+  text-decoration: underline;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+
+.register-container {
   display: flex;
   height: 100vh;
-  background-color: var(--background); /* Use theme background color */
-  color: var(--foreground); /* Use theme text color */
+  font-family: 'Roboto', sans-serif;
 }
 
-.profile-sidenav {
-  width: 250px;
-  background-color: var(--muted); /* Use theme muted color */
-  padding: 20px;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+.register-left,
+.register-right {
+  flex: 1;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
-  position: fixed; /* Make the sidebar fixed */
-  top: 100;
-  /* left: 20; */
-  margin-right: 50px;
-  height: 100%; /* Make it full height */
+  /* justify-content: center; */
+  align-items: flex-start;
+  /* margin-bottom: 100px; */
+}
+.register-right
+{
+  margin-bottom: 130px;
+  
+}
+.register-left {
+  background-color: #e5f4e3; /* Light green background */
+  color: #2d6a4f; /* Dark green text */
+  padding-left: 10%;
 }
 
-.profile-sidenav h2 {
-  margin-top: 0;
+.logo-register {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: green;
+  /* margin-bottom: 2rem; */
+  position: relative;
+  margin-top: 70px;
+  padding-bottom: 0.5rem; /* Add some space between text and underline */
 }
 
-.profile-sidenav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+.logo-register::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50%; /* Half-width underline */
+  border-bottom: 3px solid #2d6a4f; /* Dark green underline */
 }
 
-.profile-sidenav li {
-  padding: 15px;
-  cursor: pointer;
-  border-bottom: 1px solid var(--border); /* Use theme border color */
+.register-login-heading {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  color: #2d6a4f;
+  position: relative;
+  padding-bottom: 0.5rem;/* Add some space between text and underline */
 }
 
-.profile-sidenav li:hover {
-  background-color: var(--hover); /* Use theme hover color */
+.register-login-heading::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 60%; /* Half-width underline */
+  border-bottom: 3px solid #2d6a4f; /* Dark green underline */
 }
 
-.profile-content {
-  flex: 1;
-  padding: 20px;
-  margin-left: 270px; /* Add margin to avoid overlap with fixed sidebar */
+.register-left h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
-.profile-details,
-.profile-orders,
-.profile-wishlist,
-.profile-notifications {
-  background-color: var(--muted); /* Use theme muted color */
-  padding: 20px;
-  border-radius: var(--radius); /* Use theme border radius */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-left: 2rem;
+.already-registered {
+  margin-bottom: 1rem;
 }
 
-.address-card {
-  background-color: var(--background); /* Use theme background color */
-  padding: 15px;
-  border: 1px solid var(--border); /* Use theme border color */
-  border-radius: var(--radius); /* Use theme border radius */
-  margin-bottom: 10px;
+.already-registered a {
+  color: #2d6a4f;
+  text-decoration: none;
 }
 
-.edit-button,
-.add-address-button,
-.edit-button {
-  background-color: var(--primary); /* Use theme primary color */
-  color: var(--primary-foreground); /* Use theme primary text color */
+.description-reg {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  max-width: 400px;
+  line-height: 1.8;
+}
+
+.learn-more-button {
+  background-color: #2d6a4f;
   border: none;
-  padding: 10px 20px;
-  border-radius: var(--radius); /* Use theme border radius */
-  font-size: 16px;
+  color: white;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border-radius: 25px;
   cursor: pointer;
-  margin: 5px;
 }
 
-.edit-button:hover,
-.add-address-button:hover,
-.edit-button:hover {
-  background-color: #45a049; /* Slightly darker green for hover effect */
+.register-right {
+  background: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 3rem;
+  color: #2d6a4f; /* Dark green text */
+  width: 40%;
+  align-self: center;
+  margin-right: 10%;
+}
+
+.register-right h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: green;
+}
+
+.register-right form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.register-right label {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.register-right input,
+.register-right select {
+  background: rgba(45, 106, 79, 0.1); /* Light green input background */
+  border: none;
+  color: green;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.register-right .sign-up-button {
+  border: none;
+  color: white;
+  padding: 0.75rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #2d942d, #0e5b0e); /* Green gradient */
+  transition: background 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(50, 205, 50, 0.4);
+  font-weight: bold;
+  font-size: 16px; 
+  width: 40%;
+}
+.register-right .sign-up-button:hover
+{
+  background: linear-gradient(135deg, #228B22, #006400);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(50, 205, 50, 0.6);
 }
